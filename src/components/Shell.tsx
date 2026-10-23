@@ -36,6 +36,10 @@ export function Shell({ children }: { children: ReactNode }) {
             <p className="mt-3 text-sm font-semibold text-muted-foreground">
               NIET College, Greater Noida
             </p>
+            <a href="mailto:0251csml246@niet.co.in"
+              className="mt-2 inline-flex items-center gap-2 text-sm font-bold text-primary transition-opacity hover:opacity-80">
+              <span aria-hidden>✉</span> 0251csml246@niet.co.in
+            </a>
           </div>
           <div className="md:text-right">
             <p className="eyebrow">Team</p>
