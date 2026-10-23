@@ -28,8 +28,31 @@ export function Shell({ children }: { children: ReactNode }) {
         </div>
       </header>
       <main className="mx-auto max-w-6xl px-5 py-10">{children}</main>
-      <footer className="border-t border-border py-6 text-center text-xs text-muted-foreground">
-        Built for Code Catalyst Hackathon · 23 Oct 2026
+      <footer className="mt-14 border-t border-border">
+        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 md:grid-cols-[1fr_auto] md:items-start">
+          <div>
+            <p className="eyebrow">For any other queries</p>
+            <h2 className="mt-2 font-display text-5xl leading-none tracking-wide">Contact Us</h2>
+            <p className="mt-3 text-sm font-semibold text-muted-foreground">
+              NIET College, Greater Noida
+            </p>
+          </div>
+          <div className="md:text-right">
+            <p className="eyebrow">Team</p>
+            <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-sm font-bold md:justify-end">
+              <li>Abhishek Pathak</li>
+              <li>Abhishek Kushwaha</li>
+              <li>Ankit Kumar</li>
+              <li>Aman Yadav</li>
+            </ul>
+            <p className="mt-3 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+              CSE (AIML-A) · 2nd Year
+            </p>
+          </div>
+        </div>
+        <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
+          Built for Code Catalyst Hackathon · 23 Oct 2026
+        </div>
       </footer>
     </div>
   );
