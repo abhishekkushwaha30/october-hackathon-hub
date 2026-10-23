@@ -4,7 +4,7 @@ import { Shell, Avatar, Stars } from "@/components/Shell";
 import { actions, useStore } from "@/lib/store";
 
 export const Route = createFileRoute("/mentors/$id")({
-  validateSearch: (s: Record<string, unknown>): { skill?: string } => ({ skill: typeof s["skill"] === "string" ? (s["skill"] as string) : undefined }),
+  validateSearch: (s: Record<string, unknown>): { skill?: string | undefined } => ({ skill: typeof s["skill"] === "string" ? (s["skill"] as string) : undefined }),
   head: () => ({
     meta: [
       { title: "Mentor profile — Skill Exchange" },
