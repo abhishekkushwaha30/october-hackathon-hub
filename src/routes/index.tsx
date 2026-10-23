@@ -7,7 +7,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Skill Exchange — Teach what you know, learn what you love" },
-      { name: "description", content: "Peer-to-peer skill exchange: browse skills, meet mentors and book learning sessions." },
+      { name: "description", content: "Peer-to-peer skill exchange at NIET College, Greater Noida: browse skills, meet mentors and book learning sessions." },
       { property: "og:title", content: "Skill Exchange" },
       { property: "og:description", content: "Browse skills, meet mentors and book peer learning sessions." },
       { property: "og:type", content: "website" },
@@ -38,7 +38,7 @@ function Browse() {
   return (
     <Shell>
       <section className="border-b border-border pb-10">
-        <p className="eyebrow">Peer to peer learning</p>
+        <p className="eyebrow">Peer to peer learning · NIET Greater Noida</p>
         <h1 className="mt-3 font-display text-6xl leading-none md:text-8xl">
           Teach what you know.<br /><span className="text-primary">Learn what you love.</span>
         </h1>

@@ -42,9 +42,9 @@ function Offer() {
           <h1 className="mt-2 font-display text-6xl">List a skill</h1>
           <div className="mt-6 space-y-4">
             <div><p className={label}>Your name</p><input className="field mt-1" value={name} onChange={(e) => setName(e.target.value)} placeholder="Abhishek Kushwaha" /></div>
-            <div><p className={label}>Skill title</p><input className="field mt-1" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Intro to photography" /></div>
+            <div><p className={label}>Skill title</p><input className="field mt-1" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Spoken English for interviews" /></div>
             <div><p className={label}>Description</p><textarea className="field mt-1 min-h-24" value={description} onChange={(e) => setDescription(e.target.value)} /></div>
-            <div><p className={label}>Tags (comma separated)</p><input className="field mt-1" value={tags} onChange={(e) => setTags(e.target.value)} placeholder="Art, Photography" /></div>
+            <div><p className={label}>Tags (comma separated)</p><input className="field mt-1" value={tags} onChange={(e) => setTags(e.target.value)} placeholder="Coding, Placement, Music" /></div>
             <div className="grid grid-cols-2 gap-4">
               <div><p className={label}>Level</p>
                 <select className="field mt-1" value={level} onChange={(e) => setLevel(e.target.value as Skill["level"])}>
@@ -75,7 +75,7 @@ function Offer() {
           <h2 className="mt-2 font-display text-5xl">Request a skill</h2>
           <p className="mt-2 text-sm text-muted-foreground">Post what you're looking for — it'll show on your dashboard.</p>
           <div className="mt-5 space-y-4">
-            <input className="field" value={want} onChange={(e) => setWant(e.target.value)} placeholder="e.g. Video editing in Premiere" />
+            <input className="field" value={want} onChange={(e) => setWant(e.target.value)} placeholder="e.g. Stock market and SIP basics" />
             <textarea className="field min-h-20" value={wantNote} onChange={(e) => setWantNote(e.target.value)} placeholder="Your goals, schedule…" />
             <button disabled={!want} className="btn border border-primary text-primary hover:bg-primary hover:text-primary-foreground disabled:opacity-40"
               onClick={() => { actions.addWant(want, wantNote); navigate({ to: "/dashboard" }); }}>Post request</button>
